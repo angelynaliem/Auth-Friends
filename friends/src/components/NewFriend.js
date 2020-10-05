@@ -40,7 +40,7 @@ const NewFriend = () => {
     }
 
     const submitForm = (e) => {
-        e.preventDefault()
+        // e.preventDefault()
         console.log("form submitted")
         addNewFriend(newFriend)
         history.push("/friends")
