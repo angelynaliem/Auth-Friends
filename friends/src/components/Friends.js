@@ -1,5 +1,6 @@
 import React from "react";
 import { axiosWithAuth } from "../utils/axiosWithAuth";
+import Loader from "react-loader-spinner";
 
 class Friends extends React.Component {
     state = {
@@ -34,6 +35,11 @@ class Friends extends React.Component {
             <div>
                 <div>
                 <h1>Friends List</h1>
+                {this.props.fetchingData && (
+          <div>
+            <Loader />
+            <p>Loading Data</p>
+                </div>)}
                 </div>
               {this.state.friends.map((friend) => (
                   <div>
