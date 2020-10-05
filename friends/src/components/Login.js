@@ -1,17 +1,21 @@
 // // Step 2: set up login (doesnt need authentication yet, just that user can log in)
 
 import React from "react";
+// import Loader from "react-loader-spinner";
 
 import { axiosWithAuth } from "../utils/axiosWithAuth";
+import Friends from "./Friends";
 
 class Login extends React.Component {
     state = {
         credentials: {
             username: "",
             password: "",
-            // isLoading: false,
         },
+            //   isLoading: false,
+    
     }
+
 
     handleChange = (e) => {
         this.setState({

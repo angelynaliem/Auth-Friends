@@ -1,6 +1,7 @@
 import React from "react";
 import { axiosWithAuth } from "../utils/axiosWithAuth";
 import Loader from "react-loader-spinner";
+import NewFriend from "../components/NewFriend";
 
 class Friends extends React.Component {
     state = {
@@ -49,6 +50,9 @@ class Friends extends React.Component {
                                 </div>
                             
                         ))}
+                        <div>
+                            <NewFriend />
+                        </div>
                       
                 
 
