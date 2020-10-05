@@ -1,7 +1,6 @@
 // // Step 2: set up login (doesnt need authentication yet, just that user can log in)
 
 import React from "react";
-import axios from "axios";
 
 import { axiosWithAuth } from "../utils/axiosWithAuth";
 

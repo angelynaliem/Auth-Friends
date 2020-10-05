@@ -1,6 +1,6 @@
 // // Step 1: Set up PrivateRoute to check if it renders/works
 
-import React, { Component } from "react";
+import React from "react";
 import { Redirect, Route } from "react-router-dom";
 
 const PrivateRoute = ( { component: Component, ...rest } ) => {
