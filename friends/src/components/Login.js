@@ -12,7 +12,7 @@ class Login extends React.Component {
             username: "",
             password: "",
         },
-            //   isLoading: false,
+              isLoading: false,
     
     }
 
@@ -38,6 +38,10 @@ class Login extends React.Component {
             console.log("Err in Login.js is: ", err);
         })
     }
+
+    // if (this.state.isLoading) {
+    //     return <div>Loading...</div>
+    // }
 
     render() {
         return (

@@ -19,6 +19,9 @@ function App() {
           <li>
             <Link to="/friends">Friends</Link>
           </li>
+          <li>
+            <Link to="/login" onClick={() => window.localStorage.clear()}>Logout</Link>
+          </li>
         </ul>
         <Switch>
           <PrivateRoute exact path="/friends" component={Friends} />
